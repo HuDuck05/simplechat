@@ -5,7 +5,7 @@ import re  # 正規表現モジュールをインポート
 import urllib.request
 
 def call_custom_model_api(message):
-    url = "https://02cb-35-247-191-90.ngrok-free.app/predict"
+    url = "https://b852-35-227-167-208.ngrok-free.app/predict"
     data = json.dumps({"message": message}).encode("utf-8")
     req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req) as response:
